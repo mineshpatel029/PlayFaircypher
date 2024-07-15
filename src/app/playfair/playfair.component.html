@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Playfair Cipher</h1>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="key">Key:</label>
+      <input type="text" id="key" [(ngModel)]="key" name="key" required />
+    </div>
+    <div class="form-group">
+      <label for="plainText">Plain Text:</label>
+      <textarea id="plainText" [(ngModel)]="plainText" name="plainText" (ngModelChange)="onPlainTextChange()" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="cipherText">Cipher Text:</label>
+      <textarea id="cipherText" [(ngModel)]="cipherText" name="cipherText" readonly></textarea>
+    </div>
+    <div class="form-group">
+      <label for="decryptedText">Decrypted Text:</label>
+      <textarea id="decryptedText" [(ngModel)]="decryptedText" name="decryptedText" readonly></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Encrypt</button>
+      <button type="button" (click)="onDecrypt()">Decrypt</button>
+    </div>
+  </form>
+</div>

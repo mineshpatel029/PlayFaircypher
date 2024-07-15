@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PlayfairComponent } from './playfair/playfair.component';
+import { PlayfairCipherService } from './playfair-cipher.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlayfairComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [PlayfairCipherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

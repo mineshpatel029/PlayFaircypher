@@ -1,0 +1,78 @@
+/* Background styling */
+
+
+body {
+
+  background: linear-gradient(135deg, #ff41f8, #7702ff);
+  color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Container styling */
+.container {
+  h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  text-align: center;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align form elements */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%; /* Ensure form-group takes full width */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background: #ff41f8;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+button:last-child {
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+button:hover {
+  background: #cc26d5;
+}
